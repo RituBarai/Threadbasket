@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWIFTBASKET</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="width-100 top-header">
+    <div class="container">
+        <div class="width-50">
+            <p class="headquote">"Your Shortcut to Shopping Bliss!"</p>
+        </div>
+        <div class="width-50">
+            <ul class="cashback-sect">
+                <!-- Added id="birdIcon" to the bird icon -->
+                <li><i id="birdIcon" class="fas fa-dove"></i><a href="#">SWEET SWIFT</a></li>
+                <li><i class="fas fa-globe"></i><a href="#">LANGUAGE</a></li>
+                <li><i class="fas fa-mobile"></i><a href="#">DOWNLOAD APP</a></li>
+                <li><i class="fas fa-home"></i><a href="#">HOME PAGE</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Added an audio element to play the audio file -->
+<audio id="audioPlayer" src="C:\Users\white\Downloads\Evening-Improvisation-with-Ethera(chosic.com).mp3"></audio>
+
+<script>
+// JavaScript to handle audio playback when the bird icon is clicked
+document.getElementById('birdIcon').addEventListener('click', function() {
+    var audioPlayer = document.getElementById('audioPlayer');
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+    } else {
+        audioPlayer.pause();
+    }
+});
+</script>
+
+</body>
+</html>
